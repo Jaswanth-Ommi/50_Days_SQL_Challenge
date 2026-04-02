@@ -18,9 +18,9 @@ Set up the SQL project environment and prepare the dataset for analysis.
 Successfully completed project setup. Ready to start data cleaning and analysis from Day 2.
 
 
-# Day 2 – 50 Days SQL Challenge
+## Day 2 – Identifying Null and Missing Values
 
-## Overview
+### Overview
 
 On Day 2 of my **50 Days SQL Challenge**, the primary objective was to perform **data quality assessment** by identifying **NULL and missing values** across all tables in the database.
 
@@ -28,7 +28,7 @@ Building on the environment setup from Day 1, today’s focus was to ensure the 
 
 ---
 
-##  Tools & Technologies Used
+###  Tools & Technologies Used
 
 * **MySQL** – Database management and querying
 * **VS Code** – Writing and executing SQL queries
@@ -36,7 +36,7 @@ Building on the environment setup from Day 1, today’s focus was to ensure the 
 
 ---
 
-## Objective
+### Objective
 
 * Detect NULL values in all tables
 * Identify missing or incomplete data entries
@@ -44,7 +44,7 @@ Building on the environment setup from Day 1, today’s focus was to ensure the 
 
 ---
 
-## Tasks Performed
+### Tasks Performed
 
 * Connected to the database using MySQL
 * Executed SQL queries to scan each table for NULL values
@@ -54,7 +54,7 @@ Building on the environment setup from Day 1, today’s focus was to ensure the 
 
 ---
 
-## Sample Query Used
+### Sample Query Used
 
 ```sql
 SELECT *
@@ -64,7 +64,7 @@ WHERE column_name IS NULL;
 
 ---
 
-## Key Outcomes
+### Key Outcomes
 
 * Successfully identified NULL and missing values across all tables
 * Gained better understanding of data quality issues
@@ -72,7 +72,7 @@ WHERE column_name IS NULL;
 
 ---
 
-## Learnings
+### Learnings
 
 * Importance of data validation before analysis
 * Efficient use of SQL conditions like `IS NULL`
@@ -80,7 +80,7 @@ WHERE column_name IS NULL;
 
 ---
 
-## What’s Next?
+### What’s Next?
 
 In the next phase, I will focus on:
 
@@ -90,7 +90,7 @@ In the next phase, I will focus on:
 
 ---
 
-## Repository
+### Repository
 
 All queries and progress for Day 2 are available in this repository. Stay tuned for more updates as I continue this journey!
 
