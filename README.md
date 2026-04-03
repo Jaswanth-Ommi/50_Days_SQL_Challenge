@@ -98,4 +98,86 @@ All queries and progress for Day 2 are available in this repository. Stay tuned 
 
 ✨ *Consistency is key — one query at a time!*
 
+# Day 3 – SQL 50 Days Challenge
+
+## Overview
+
+On Day 3 of my 50 Days SQL Challenge, the focus shifted to identifying duplicate records within the database tables.
+
+After analyzing NULL and missing values on Day 2, today’s task was to ensure data uniqueness and integrity, which is essential for accurate analysis and reporting.
+
+---
+
+## Tools & Technologies Used
+
+* MySQL – Writing and executing SQL queries
+* VS Code – Query development and workflow management
+* GitHub – Version control and daily progress tracking
+
+---
+
+## Objective
+
+* Detect duplicate records in all tables
+* Understand how duplication affects data accuracy
+* Prepare the dataset for cleaning and normalization
+
+---
+
+## Tasks Performed
+
+* Scanned all tables to identify duplicate rows
+* Used GROUP BY and COUNT() functions to detect repeated records
+* Applied filtering conditions using HAVING COUNT(*) > 1
+* Analyzed columns contributing to duplication
+* Documented duplicate patterns for future cleaning steps
+
+---
+
+## Sample Query Used
+
+```sql id="dupe02"
+SELECT column_name, COUNT(*) AS duplicate_count
+FROM table_name
+GROUP BY column_name
+HAVING COUNT(*) > 1;
+```
+
+---
+
+## Key Outcomes
+
+* Successfully identified duplicate records across multiple tables
+* Gained insights into how duplicates can distort analysis
+* Built a strong foundation for upcoming data cleaning and deduplication
+
+---
+
+## Learnings
+
+* Importance of maintaining data uniqueness
+* Practical use of GROUP BY, COUNT(), and HAVING
+* Real-world challenges of handling duplicate data
+
+---
+
+## What’s Next?
+
+Next, I will focus on:
+
+* Removing or handling duplicate records
+* Applying data cleaning techniques
+* Improving overall data quality for analysis
+
+---
+
+## Repository
+
+All queries and progress for Day 3 are available in this repository. Stay tuned for more updates.
+
+---
+
+Consistency builds expertise — one step at a time.
+
+
 
