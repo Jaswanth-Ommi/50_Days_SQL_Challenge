@@ -1,3 +1,5 @@
+
+-- Removing Null Values and Replacing with Default Values
 update cleaned_employees
 set emp_name  = "Unknown"
 where emp_name = "" or emp_name is null;
