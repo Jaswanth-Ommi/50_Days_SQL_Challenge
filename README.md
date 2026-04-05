@@ -96,8 +96,6 @@ All queries and progress for Day 2 are available in this repository. Stay tuned 
 
 ---
 
-✨ *Consistency is key — one query at a time!*
-
 # Day 3 – SQL 50 Days Challenge
 
 ## Overview
@@ -177,7 +175,89 @@ All queries and progress for Day 3 are available in this repository. Stay tuned 
 
 ---
 
+# Day 4 – SQL 50 Days Challenge
+
+## Overview
+
+On Day 4 of my 50 Days SQL Challenge, the focus was on cleaning the dataset by removing duplicate records from all tables.
+
+After identifying duplicate entries on Day 3, today’s task was to ensure data consistency and integrity by eliminating redundant data. This step is crucial for maintaining accurate analysis and reliable reporting.
+
+---
+
+## Tools & Technologies Used
+
+* MySQL – Writing and executing SQL queries
+* VS Code – Query development and workflow management
+* GitHub – Version control and daily progress tracking
+
+---
+
+## Objective
+
+* Remove duplicate records from all tables
+* Ensure data uniqueness and consistency
+* Prepare a clean dataset for further analysis
+
+---
+
+## Tasks Performed
+
+* Reviewed previously identified duplicate records
+* Applied SQL techniques to remove duplicates
+* Used DELETE statements with conditions to retain only unique records
+* Leveraged window functions like ROW_NUMBER() (where applicable) to identify duplicates
+* Validated tables after cleaning to ensure no duplicates remain
+
+---
+
+## Sample Query Used
+
+```sql id="clean01"
+DELETE FROM table_name
+WHERE id NOT IN (
+    SELECT MIN(id)
+    FROM table_name
+    GROUP BY column_name
+);
+```
+
+---
+
+## Key Outcomes
+
+* Successfully removed duplicate records from all tables
+* Improved overall data quality and consistency
+* Ensured dataset is ready for accurate analysis
+
+---
+
+## Learnings
+
+* Importance of data cleaning in real-world datasets
+* Practical use of DELETE operations and subqueries
+* Understanding safe ways to remove duplicates without losing essential data
+
+---
+
+## What’s Next?
+
+Next, I will focus on:
+
+* Handling remaining data inconsistencies
+* Standardizing data formats
+* Preparing the dataset for advanced SQL queries and analysis
+
+---
+
+## Repository
+
+All queries and progress for Day 4 are available in this repository. Stay tuned for more updates.
+
+---
+
 Consistency builds expertise — one step at a time.
+
 
 
 
