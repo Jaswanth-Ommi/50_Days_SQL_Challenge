@@ -343,25 +343,26 @@ All queries and progress for Day 5 are available in this repository. Stay tuned 
 
 ## Day 6: Data Cleaning (Outlier Detection & Handling)
 
-## Objective
+# Objective
 
 Identify and handle extreme values (outliers) in the dataset.
-Tasks Completed
 
-Detected outliers using business thresholds (e.g., salary range)
-Flagged outliers using a new column (is_outlier)
+# Tasks Completed
 
-Differentiated between valid and invalid outliers
-Replaced incorrect outliers using client-provided data
-Preserved valid extreme values (e.g., CEO salary)
+* Detected outliers using business thresholds (e.g., salary range)
+* Flagged outliers using a new column (is_outlier)
+*Differentiated between valid and invalid outliers
+*Replaced incorrect outliers using client-provided data
+*Preserved valid extreme values (e.g., CEO salary)
 
-## Key Learning
+# Key Learning
 
 Not all outliers are errors — some are meaningful
 Outliers should be analyzed, not blindly removed
 Business understanding is essential in decision-making
 
-## Outcome
+# Outcome
+
 Outliers are properly identified and handled, ensuring both accuracy and meaningful insights.
 
 
