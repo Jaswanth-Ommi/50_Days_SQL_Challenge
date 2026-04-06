@@ -41,39 +41,39 @@ where age < 18 or age > 65;
 -- we need to change only the salaries table
 
 update cleaned_salaries
-set salary =
-case
-when emp_id = 463 then salary = 55000
-when emp_id = 142 then salary = 60000
-when emp_id = 100 then salary = 45000
-when emp_id = 30 then salary = 70000
-when emp_id = 54 then salary = 52000
-when emp_id = 310 then salary = 48000
-when emp_id = 183 then salary = 51000
-when emp_id = 168 then salary = 47000
-when emp_id = 126 then salary = 46000
-when emp_id = 206 then salary = 58000
-when emp_id = 76 then salary = 49000
-when emp_id = 433 then salary = 62000
-when emp_id = 43 then salary = 53000
-when emp_id = 324 then salary = 55000
-when emp_id = 226 then salary = 51000
-when emp_id = 113 then salary = 50000
-when emp_id = 273 then salary = 52000
-when emp_id = 200 then salary = 48000
-when emp_id = 160 then salary = 47000
-when emp_id = 42 then salary = 46000
-when emp_id = 150 then salary = 49000
-when emp_id = 45 then salary = 53000
-when emp_id = 65 then salary = 54000
-when emp_id = 488 then salary = 60000
-when emp_id = 8 then salary = 45000
-when emp_id = 121 then salary = 50000
-when emp_id = 78 then salary = 47000
-when emp_id = 94 then salary = 46000
-when emp_id = 353 then salary = 52000
-
+set salary = case
+	when emp_id = 463 then 55000
+	when emp_id = 142 then 60000
+	when emp_id = 100 then 45000
+	when emp_id = 30 then 70000
+	when emp_id = 54 then 52000
+	when emp_id = 310 then 48000
+	when emp_id = 183 then 51000
+	when emp_id = 168 then 47000
+	when emp_id = 126 then 46000
+	when emp_id = 206 then 58000
+	when emp_id = 76 then 49000
+	when emp_id = 433 then 62000
+	when emp_id = 43 then 53000
+	when emp_id = 324 then 55000
+	when emp_id = 226 then 51000
+	when emp_id = 113 then 50000
+	when emp_id = 273 then 52000
+	when emp_id = 200 then 48000
+	when emp_id = 160 then 47000
+	when emp_id = 42 then 46000
+	when emp_id = 150 then 49000
+	when emp_id = 45 then 53000
+	when emp_id = 65 then 54000
+	when emp_id = 488 then 60000
+	when emp_id = 8 then 45000
+	when emp_id = 121 then 50000
+	when emp_id = 78 then 47000
+	when emp_id = 94 then 46000
+	when emp_id = 353 then 52000
+	else salary
 end
-where salary < 0;
+where salary = 0;
+
 
 

@@ -1,5 +1,7 @@
+-- Identifying Null Values in Cleaned Tables
 
 -- cleaned_departments table
+
 select * from cleaned_departments
 where dept_id = "" or dept_id is null
 or

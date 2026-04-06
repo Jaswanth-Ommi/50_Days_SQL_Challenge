@@ -43,6 +43,7 @@ alter table attendance
 modify column attendance_date varchar(50);
 
 
+use hr_database;
 -- Cleaned tables
 
 create table cleaned_departments as

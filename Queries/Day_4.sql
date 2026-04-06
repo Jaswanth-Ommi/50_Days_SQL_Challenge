@@ -13,16 +13,16 @@ where emp_id in (select emp_id from cte
 where rn>1);
 
 
---attendance_table
 with cte as (
-    select *, row_number() over(partition by emp_id, attendance_date, status 
-        order by attendance_id) as rn
+    select attendance_id, row_number() over(
+        partition by emp_id, attendance_date, status 
+        order by attendance_id
+    ) as rn
     from cleaned_attendance
 )
 delete from cleaned_attendance
 where attendance_id in (
-    select attendance_id from cte
-    where rn > 1
+    select attendance_id from cte where rn > 1
 );
 
 -- performance_table
